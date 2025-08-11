@@ -38,6 +38,11 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
+    /* Shadows & Gradients */
+    --shadow-elevated: 0 8px 24px hsl(var(--foreground) / 0.06), 0 2px 8px hsl(var(--foreground) / 0.04);
+    --shadow-soft: 0 2px 6px hsl(var(--foreground) / 0.06);
+    --gradient-teal: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--primary) / 0.8) 100%);
+
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -102,4 +107,10 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer utilities {
+  .shadow-elevated { box-shadow: var(--shadow-elevated); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .hover-scale { @apply transition-transform duration-200 hover:scale-105; }
 }
