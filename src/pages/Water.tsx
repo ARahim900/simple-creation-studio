@@ -51,9 +51,9 @@ export default function Water() {
             <XAxis dataKey="month" tickLine={false} axisLine={false} />
             <YAxis width={40} tickLine={false} axisLine={false} />
             <ChartTooltip content={<ChartTooltipContent />} />
-            <Area type="monotone" dataKey="l1" stroke="var(--color-l1)" fill="var(--color-l1)" fillOpacity={0.2} />
-            <Area type="monotone" dataKey="l2" stroke="var(--color-l2)" fill="var(--color-l2)" fillOpacity={0.2} />
-            <Area type="monotone" dataKey="l3" stroke="var(--color-l3)" fill="var(--color-l3)" fillOpacity={0.2} />
+            <Area type="monotone" dataKey="l1" stroke="var(--color-l1)" strokeWidth={2} fill="var(--color-l1)" fillOpacity={0.2} isAnimationActive animationDuration={800} animationEasing="ease-out" />
+            <Area type="monotone" dataKey="l2" stroke="var(--color-l2)" strokeWidth={2} fill="var(--color-l2)" fillOpacity={0.2} isAnimationActive animationDuration={800} animationEasing="ease-out" />
+            <Area type="monotone" dataKey="l3" stroke="var(--color-l3)" strokeWidth={2} fill="var(--color-l3)" fillOpacity={0.2} isAnimationActive animationDuration={800} animationEasing="ease-out" />
           </AreaChart>
         </ChartContainer>
       </section>
@@ -73,9 +73,9 @@ export default function Water() {
             <XAxis dataKey="month" tickLine={false} axisLine={false} />
             <YAxis width={40} unit="%" tickLine={false} axisLine={false} />
             <ChartTooltip content={<ChartTooltipContent />} />
-            <Line type="monotone" dataKey="s1" stroke="var(--color-s1)" strokeWidth={2} dot={false} />
-            <Line type="monotone" dataKey="s2" stroke="var(--color-s2)" strokeWidth={2} dot={false} />
-            <Line type="monotone" dataKey="s3" stroke="var(--color-s3)" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey="s1" stroke="var(--color-s1)" strokeWidth={2} dot={false} isAnimationActive animationDuration={700} animationEasing="ease-out" />
+            <Line type="monotone" dataKey="s2" stroke="var(--color-s2)" strokeWidth={2} dot={false} isAnimationActive animationDuration={700} animationEasing="ease-out" />
+            <Line type="monotone" dataKey="s3" stroke="var(--color-s3)" strokeWidth={2} dot={false} isAnimationActive animationDuration={700} animationEasing="ease-out" />
           </LineChart>
         </ChartContainer>
       </section>

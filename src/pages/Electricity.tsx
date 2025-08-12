@@ -43,7 +43,7 @@ export default function Electricity() {
               <XAxis dataKey="month" tickLine={false} axisLine={false} />
               <YAxis width={40} tickLine={false} axisLine={false} />
               <ChartTooltip content={<ChartTooltipContent />} />
-              <Area type="monotone" dataKey="kwh" stroke="var(--color-kwh)" fill="var(--color-kwh)" fillOpacity={0.25} />
+              <Area type="monotone" dataKey="kwh" stroke="var(--color-kwh)" strokeWidth={2} fill="var(--color-kwh)" fillOpacity={0.25} isAnimationActive animationDuration={800} animationEasing="ease-out" />
             </AreaChart>
           </ChartContainer>
         </section>
@@ -56,7 +56,7 @@ export default function Electricity() {
               <XAxis dataKey="type" tickLine={false} axisLine={false} />
               <YAxis width={40} tickLine={false} axisLine={false} />
               <ChartTooltip content={<ChartTooltipContent />} />
-              <Bar dataKey="kwh" fill="var(--color-kwh)" radius={[6, 6, 0, 0]} />
+              <Bar dataKey="kwh" fill="var(--color-kwh)" radius={[6, 6, 0, 0]} isAnimationActive animationDuration={700} />
             </BarChart>
           </ChartContainer>
         </section>
